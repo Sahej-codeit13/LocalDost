@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local Dost</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main" class="wrap">
+    <form id="search-form" class="search" action="search.html">
+      <div>
+        <label for="q" class="sr-only" data-i18n="ask"></label>
+        <input id="q" name="q" type="search" list="suggestions" autocomplete="off" required
+               data-i18n-placeholder="searchPlaceholder">
+        <datalist id="suggestions"></datalist>
+      </div>
+      <div>
+        <label for="city" data-i18n="cityLabel"></label>
+        <select id="city" name="city"></select>
+      </div>
+      <button class="btn" type="submit" data-i18n="searchBtn"></button>
+    </form>
+
+    <div id="results" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/common.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
