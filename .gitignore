@@ -1,0 +1,7 @@
+# macOS files
+.DS_Store
+
+# Local SQLite database and temporary files
+data/*.db
+data/*.db-wal
+data/*.db-shm
